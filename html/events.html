@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta-charset="utf-8" />
+    <title>Events</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/p_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body onload="preloader()">
+<!--my preloader-->
+<div id="preloader">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+</div>
+
+<!--my navbar-->
+<div class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="navlogo"><img src="img/p_logo.jpg"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#abtMe">About Me</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item dropdown active">
+                <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                    Other Info 
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="edu_bg.html">Background</a>
+                    <a class="dropdown-item" href="events.html">Events</a>
+                </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="p_contact.html">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--big header w/lightbox-->
+<div class="jumbotron">
+    <h1 class="display-3">Australia</h1>
+    <hr class="my-2">
+    <p>19-25 Dec 2018</p>
+</div>
+
+<div class="roww lightbox margin">
+  <div class="column">
+    <img src="img/aus5.jpeg" onclick="openModal1();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/aus2.jpeg" onclick="openModal1();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/aus3.jpeg" onclick="openModal1();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/aus4.jpeg" onclick="openModal1();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/aus1.jpeg" onclick="openModal1();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal1()">&times;</span>
+  <div class="modaal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/aus5.jpeg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/aus2.jpeg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/aus3.jpeg">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/aus4.jpeg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/aus1.jpeg">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption">test caption</p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/aus5.jpeg" onclick="currentSlide(1)" alt="big scenery at penguin island">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/aus2.jpeg" onclick="currentSlide(2)" alt="big birbs also at penguin island">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/aus3.jpeg" onclick="currentSlide(3)" alt="family at penguin island">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/aus4.jpeg" onclick="currentSlide(4)" alt="familyy on mountain, in train thingy">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/aus1.jpeg" onclick="currentSlide(5)" alt="shoes">
+    </div>
+  </div>
+</div>
+
+
+<!--bigg header-->
+<div class="jumbotron margin">
+    <h1 class="display-3">Grad Nite</h1>
+    <hr class="light">
+    <p>21 Nov 2018</p>
+</div>
+
+<div class="roww lightbox margin">
+  <div class="column">
+    <img src="img/gn1.jpeg" onclick="openModal2();currentSlides(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/gn2.jpeg" onclick="openModal2();currentSlides(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/gn3.jpeg" onclick="openModal2();currentSlides(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/gn4.jpeg" onclick="openModal2();currentSlides(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/gn5.jpeg" onclick="openModal2();currentSlides(5)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="aModal" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modaal-content">
+
+    <div class="mySlidess">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/gn1.jpeg">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/gn2.jpeg">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/gn3.jpeg">
+    </div>
+    
+    <div class="mySlidess">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/gn4.jpeg">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/gn5.jpeg">
+    </div>
+    
+    <a class="prev" onclick="plusSlidess(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidess(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="captionn">test captionn</p>
+    </div>
+
+
+    <div class="column">
+      <img class="demoo cursor" src="img/gn1.jpeg" onclick="currentSlides(1)" alt="me --> Justinananana --> Changrui --> Wei Jie (that guy in the background)">
+    </div>
+    <div class="column">
+      <img class="demoo cursor" src="img/gn2.jpeg" onclick="currentSlides(2)" alt="me + Afiq">
+    </div>
+    <div class="column">
+      <img class="demoo cursor" src="img/gn3.jpeg" onclick="currentSlides(3)" alt="Malcolm + me">
+    </div>
+    <div class="column">
+      <img class="demoo cursor" src="img/gn4.jpeg" onclick="currentSlides(4)" alt="me + Scott">
+    </div>
+    <div class="column">
+      <img class="demoo cursor" src="img/gn5.jpeg" onclick="currentSlides(5)" alt="me --> Chaim --> Amoz --> Scott">
+    </div>
+  </div>
+</div>
+
+
+<!--biggg header-->
+<div class="jumbotron">
+    <h1 class="display-3">Gaming</h1>
+    <hr class="light">
+    <p>Competitions where I actually won stuff LOL</p>
+</div>
+
+
+<div class="container-fluid margin main animate-bottom">
+  <div class="row margin">
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-5">
+          <h2>King of The Hill style competition at Singtel Comcentre</h2>
+          <p>I remember this day, 20th May 2018 clearly since it was on my birthday.</p>
+          <p>It was also one day before my Chinese O level paper 1 and 2 LMAO (I still got A1 so it's fine)</p>
+          <p><br />If you were expecting a picture of my team and I: there isn't one! The organisers said that they would post it on the event's Facebook page but they didn't, so.</p>
+          <p>The facebook page in question: <a href="https://www.facebook.com/vainglorysgmy/photos/a.1039104262792936/1662150567154966/?type=3">this</a> and <a href="https://www.facebook.com/events/2044280455839373/?ti=cl">this</a></p>
+      </div>
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-5 vg3">
+          <img src="img/vg3.jpeg" alt="king of the hill">
+      </div>
+  </div>
+<div class="row margin">
+    <div class="col-sm-0 col-md-0 col-lg-1"></div>
+    <div class="col-sm-12 col-md-12 col-lg-5">
+        <p>The prize: a black Razer Kraken V2 headset and a $10 Challenger voucher (which I gave to my mum lol).</p>
+    </div>
+    <div class="col-sm-0 col-md-0 col-lg-1"></div>
+    <div class="col-sm-12 col-md-12 col-lg-5 vg4">
+        <img src="img/vg4.jpeg" alt="Spoils of war">
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid margin text-center animate-bottom">
+  <h1>Warning: huge text wall ahead. Click <a href="#tldr">here</a> for tl;dr.</h1>
+</div>
+
+<div class="container-fluid margin main animate-bottom">
+  <div class="row margin">
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-5">
+          <h2>King of The Hill style competition at Kallang Theatre</h2>
+          <p>This one was in mid-December 2017..</p>
+          <p>I went to Kallang Theatre to watch the Vainglory 2017 World Championship.</p>
+          <p>Basically two Razer staff asked if I wanted to play in a competition too and told me that there would be prizes so I agreed.</p>
+          <p>It was a king-of-the-hill-style match which I didn't know about until the competition started, and since I was the first to sign up, I was also first in line to play.</p>
+          <p>When I looked behind me, there was a long queue snaking all the way to the entrance of the venue, and I thought, "Oh shit" but it was too late to back out, so I just carried on with it.</p>
+          <p>To my surprise, I easily carried my team and steamrolled over most of the other players. Yes, <i>easily</i>. At that time, I was spending hours everyday playing Vainglory, and I was ranked at Tier 9, Gold division, one rank away from the highest tier.</p>
+          <p>All was going smoothly, there were only 2 teams left between my team and the top prize. That was when a team of 3, all wearing matching jerseys, stood at the Razer phones across us. At a glance I knew they were different, and reality proved it to be true. They crushed me with their superior skill and team synergy just as I had done to the many teams before them.</p>
+          <p>Defeated, I could only accept the consolation prize, which was a Razer Hammerhead earpiece...for iOS. "I'm an Android user dammit", I thought, but there was nothing I could do.</p>
+      </div>
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-5 vg2">
+        <img src="img/vg5.jpeg" alt="game booth">
+        <img src="img/vg2.jpeg" alt="king of the hill">
+      </div>
+  </div>  
+  <div class="row margin">
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-5">
+        <h2>Round 2:</h2>
+        <p>The next day, I went again (to watch the competition of course), and I saw the same two Razer employees</p>
+        <p>Well they saw me too, so I waved to greet them as they approached me with somewhat apprehensive expressions on their faces.</p>
+        <p>I soon found out that the reason for their apprehension was because the team that crushed mine yesterday was made up of local pro players who were here with their team, Impunity.</p>
+        <p>Since they were only second-string pro players, they weren't sent to represent Singapore in the world championship, and instead came to participate in the unofficial one which I also happened to be in..</p>
+        <p>The thing is, they weren't actually allowed to play in the unofficial competition since they were pro players, and the Razer employees didn't notice that they were pro players, so they let them play. However, once they found out the truth about them being pro players, the employees immediately disqualified them.</p>
+        <p>However, by then, I was long gone, watching the championship within the huge crowd upstairs. Unable to find or contact me, they decided to hold the unofficial competition again the next day in hopes that my team would pass by again so that they could make it up to us.</p>
+        <p>As fate would have it, we did pass by just after the registration ended. The Razer employees decided to let us join at the end of the queue as they felt bad about the previous day. </p>
+        <p>When it was our turn, history repeated and we easily crushed the previous king of the hill. This time, we were fully rested, not exhausted from playing for nearly an hour without any breaks, and had ample time to prepare to destroy the reigning king while waiting in the queue.</p>
+      </div>
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-5 vg1">
+          <img src="img/vg1.jpeg" alt="king of the hill">
+      </div>
+  </div>
+  <div class="row margin">
+      <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <h1 id="tldr">TLDR:</h1>
+        <h2>I crushed noobs at a comp, then got crushed by pros; said pros were disqualified and I won $300+ worth of Razer goods in 2 days.</h2>
+        <h2>Yes this is a true story.</h2>
+        <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      </div>
+  </div>
+</div>
+
+
+<!--show page location and provide link to top-->
+<div id="pageNav">
+<div class="row text-center">
+    <div class="col-12">
+    <p class="lead">Psst! Are you lost?</p>
+    </div>
+</div>
+<div class="row padding">
+<div class="col-sm-1 col-md-1 col-lg-5">
+    <a href="#"><img src="img/upbutton.jpg"></a>
+</div>
+<div class="col-sm-11 col-md-11 col-lg-7">
+    <p id="cool"></p>
+</div>
+</div>
+</div>
+
+<!--my footer-->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col-md-12"id="endmail">
+        <h4>jiajun19@ichat.sp.edu.sg</h4>
+        <h5 class="SG">
+            0.571082 | 
+        </h5>
+        <h5 class="SG">
+            1.130426
+        </h5>
+        <button type="button" class="btn btn-outline-secondary btn-lg" onclick="SGrandom()" id="SGbtn">Click me!</button>
+        <div class="navbar navbar-expand-md navbar-light bg-light" id="endNav">
+            <div class="container-fluid">
+                <div>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#abtMe">About Me</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="awards.html">Awards</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Other Info 
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="edu_bg.html">Background</a>
+                          <a class="dropdown-item" href="events.html">Events</a>
+                        </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="p_contact.html">Connect</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 social padding">
+    <hr class="light">
+        <a href="#"><i class ="fab fa-facebook fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-4x" aria-hidden="true"></i></a>
+    </div>
+    <div class="col-12">
+        <hr class="light">
+        <h5>&copy; lululululu</h5>
+    </div>
+</div>
+</div>
+</footer>
+
+<script src="js/scripts.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Form</title>
+    <link href="css/p_styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300i|Open+Sans:300|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+
+<body onload="preloader()" class="cbody">
+<!--this preloader-->
+    <div id="preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    
+<!--this navbar-->
+<div class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="navlogo"><img src="img/p_logo.jpg"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#abtMe">About Me</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item dropdown active">
+                <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                    Other Info 
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="edu_bg.html">Background</a>
+                    <a class="dropdown-item" href="events.html">Events</a>
+                </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="p_contact.html">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid animate-bottom">
+<div class="contact-form">
+	<form name="myRegForm" action="action_page.html" method="post" onsubmit="return validateForm()">
+        <h1>Contact Me!</h1>
+		<p id="hint-text" class="lead text-center"></p>
+		<div class="form-group">
+			<label for="name">Name: </label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="jj">
+		</div>
+		<div class="form-group">
+			<label for="email">Email Address: </label>
+			<input type="email" name="email" class="form-control" id="email" placeholder="jj@gmail.com">
+		</div>
+		<div class="form-group">
+			<label for="hp">Phone number: <i class="fa fa-phone" aria-hidden="true"></i></label>
+			<input type="phone" name="hp" class="form-control" id="hp" placeholder="123-456-7890">
+		</div>
+		<div class="form-group">
+			<label for="subject">Subject: </label>
+			<input type="text" name="subject" class="form-control" id="subject">
+		</div>
+		<div class="form-group">
+			<label for="message">Message: </label>
+			<textarea type="text" class="form-control" id="message" name="message" rows="5"></textarea>
+		</div>
+		<button type="submit" value="Submit" class="btn btn-primary btn-block" onclick="phonenumber(document.myRegForm.hp)"><i class="fa fa-paper-plane"></i> Send Message</button>
+    </form>
+</div>
+</div>
+
+<!--show page location and provide link to top-->
+<div id="pageNav">
+<div class="row text-center">
+    <div class="col-12">
+    <p class="lead">Psst! Are you lost?</p>
+    </div>
+</div>
+<div class="row padding">
+<div class="col-sm-1 col-md-1 col-lg-5">
+    <a href="#"><img src="img/upbutton.jpg"></a>
+</div>
+<div class="col-sm-11 col-md-11 col-lg-7">
+    <p id="cool"></p>
+</div>
+</div>
+</div>
+
+<!--this footer-->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col-md-12"id="endmail">
+        <h4>jiajun19@ichat.sp.edu.sg</h4>
+        <h5 class="SG">
+            0.571082 | 
+        </h5>
+        <h5 class="SG">
+            1.130426
+        </h5>
+        <button type="button" class="btn btn-outline-secondary btn-lg" onclick="SGrandom()" id="SGbtn">Click me!</button>
+        <div class="navbar navbar-expand-md navbar-light bg-light" id="endNav">
+            <div class="container-fluid">
+                <div>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#abtMe">About Me</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="awards.html">Awards</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Other Info 
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="edu_bg.html">Background</a>
+                          <a class="dropdown-item" href="events.html">Events</a>
+                        </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="p_contact.html">Connect</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 social padding">
+    <hr class="light">
+        <a href="#"><i class ="fab fa-facebook fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-4x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-4x" aria-hidden="true"></i></a>
+    </div>
+    <div class="col-12">
+        <hr class="light">
+        <h5>&copy; lululululu</h5>
+    </div>
+</div>
+</div>
+</footer>
+
+<script src="js/scripts.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>
